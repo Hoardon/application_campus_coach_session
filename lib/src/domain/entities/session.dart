@@ -9,7 +9,7 @@ abstract class Session with _$Session {
     required String id,
     required String title,
     required int sessionIndex,
-    required int duration,
+    required Duration duration,
     required double distance,
     required int difficulty,
     required SessionType type,

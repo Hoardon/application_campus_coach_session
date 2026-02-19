@@ -21,8 +21,8 @@ abstract class SessionModel with _$SessionModel {
     required List<ExerciseBlockModel> exerciseBlocks,
   }) = _SessionModel;
 
-  factory SessionModel.fromJson(Map<String, dynamic> json) =>
-      _$SessionModelFromJson(json);
+  factory SessionModel.fromJson(Map<String, dynamic> json)
+      => _$SessionModelFromJson(json);
 }
 
 extension SessionModelMapper on SessionModel {
@@ -31,7 +31,7 @@ extension SessionModelMapper on SessionModel {
       id: id,
       title: title,
       sessionIndex: sessionIndex,
-      duration: duration,
+      duration: Duration(seconds: duration),
       distance: distance,
       difficulty: difficulty,
       type: SessionType.values.byName(type),
