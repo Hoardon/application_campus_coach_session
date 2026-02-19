@@ -22,7 +22,7 @@ extension ExerciseBlockModelMapper on ExerciseBlockModel {
     return ExerciseBlock(
       exercises: exercises.map((e) => e.toEntity()).toList(),
       repeat: repeat,
-      blockType: BlockType.values.byName(blockType),
+      blockType: blockType.toBlockType(),
     );
   }
 }

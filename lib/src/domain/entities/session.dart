@@ -22,4 +22,22 @@ abstract class Session with _$Session {
 
 enum SessionType { road, trail }
 
+extension SessionTypeExtension on String {
+  SessionType toSessionType() {
+    return SessionType.values.firstWhere(
+      (e) => e.name == this,
+      orElse: () => SessionType.road,
+    );
+  }
+}
+
 enum SessionStatus { todo, done, skipped }
+
+extension SessionStatusExtension on String {
+  SessionStatus toSessionStatus() {
+    return SessionStatus.values.firstWhere(
+      (e) => e.name == this,
+      orElse: () => SessionStatus.todo,
+    );
+  }
+}

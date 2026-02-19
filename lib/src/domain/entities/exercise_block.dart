@@ -13,3 +13,12 @@ abstract class ExerciseBlock with _$ExerciseBlock {
 }
 
 enum BlockType { recovery, warmUp, none }
+
+extension BlockTypeExtension on String {
+  BlockType toBlockType() {
+    return BlockType.values.firstWhere(
+      (e) => e.name == this,
+      orElse: () => BlockType.warmUp,
+    );
+  }
+}

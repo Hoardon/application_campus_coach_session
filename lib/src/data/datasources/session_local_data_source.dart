@@ -7,12 +7,15 @@ abstract class SessionLocalDataSource {
 }
 
 class SessionLocalDataSourceImpl implements SessionLocalDataSource {
+  final Future<String> Function(String path) loadString;
   static const mocksPath = 'assets/mocks/sessions_mocks.json';
+
+  SessionLocalDataSourceImpl({Future<String> Function(String path)? loader})
+    : loadString = loader ?? rootBundle.loadString;
 
   @override
   Future<List<SessionModel>> getSessions() async {
-    final String jsonString = await rootBundle.loadString(mocksPath);
-
+    final jsonString = await loadString(mocksPath);
     final List<dynamic> jsonList = json.decode(jsonString);
 
     return jsonList.map((jsonItem) => SessionModel.fromJson(jsonItem)).toList();
