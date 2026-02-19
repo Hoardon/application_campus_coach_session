@@ -18,6 +18,7 @@ dependencies:
   firebase_core: ^4.4.0
   firebase_crashlytics: ^5.0.7
   logger: ^2.6.2
+  get: ^4.7.3
   
 dev_dependencies:
   flutter_test:
