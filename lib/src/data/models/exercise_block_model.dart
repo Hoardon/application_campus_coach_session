@@ -1,6 +1,6 @@
 import 'package:application_campus_coach_session/src/data/models/exercise_model.dart';
+import 'package:application_campus_coach_session/src/domain/entities/exercise_block.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import '../../domain/entities/exercise_block.dart';
 
 part 'exercise_block_model.freezed.dart';
 part 'exercise_block_model.g.dart';
