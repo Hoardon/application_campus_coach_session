@@ -25,7 +25,6 @@ class SessionDetailsPage extends GetView<SessionDetailsController> {
               UiSuccess(data: final session) => Column(
                 children: [Text(session.title), Text(session.description)],
               ),
-              _ => const SizedBox(),
             };
           }),
         ],
