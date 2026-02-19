@@ -1,0 +1,155 @@
+[
+  {
+    "id": "session_001",
+    "title": "Base aérobie progressive",
+    "sessionIndex": 1,
+    "duration": 4800,
+    "distance": 12.4,
+    "difficulty": 2,
+    "type": "road",
+    "status": "done",
+    "description": "Cette séance a pour objectif de consolider ta base aérobie en travaillant principalement en zone 2 avec une progression douce sur la deuxième moitié. L’idée est de développer l’endurance fondamentale tout en améliorant l’efficacité de ta foulée et ta capacité à maintenir une allure stable dans la durée. La progression doit rester confortable, sans sensation d’essoufflement important. Concentre-toi sur ta posture, le relâchement des épaules et la régularité de ta respiration. Ce travail constitue un socle essentiel pour les séances plus intenses à venir et contribue fortement à l’amélioration globale de tes performances sur route.",
+    "coachAdvice": "Pendant cette séance, veille à ne pas te laisser emporter par de bonnes sensations en début de sortie. Reste discipliné sur l’allure et garde une respiration maîtrisée. Si tu te sens particulièrement en forme, augmente légèrement l’allure uniquement sur la dernière partie, mais sans dépasser la zone 3. Hydrate-toi régulièrement même si la température est modérée. Pense à analyser tes sensations en fin de séance afin d’évaluer ton niveau de fraîcheur musculaire et cardiovasculaire. Ce type de sortie doit te laisser une impression de travail accompli sans fatigue excessive."
+,
+    "exerciseBlocks": [
+      {
+        "blockType": "warmUp",
+        "repeat": 1,
+        "exercises": [
+          {
+            "paceName": "Endurance fondamentale",
+            "zone": 2,
+            "duration": 900,
+            "pace": 370
+          }
+        ]
+      },
+      {
+        "blockType": "default",
+        "repeat": 1,
+        "exercises": [
+          {
+            "paceName": "Endurance fondamentale",
+            "zone": 2,
+            "duration": 3000,
+            "pace": 360
+          }
+        ]
+      },
+      {
+        "blockType": "recovery",
+        "repeat": 1,
+        "exercises": [
+          {
+            "paceName": "Retour au calme",
+            "zone": 1,
+            "duration": 900,
+            "pace": 420
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "session_002",
+    "title": "Seuil structuré en blocs",
+    "sessionIndex": 2,
+    "duration": 4200,
+    "distance": 11.2,
+    "difficulty": 4,
+    "type": "road",
+    "status": "todo",
+    "description": "Cette séance vise à développer ta capacité à maintenir une intensité proche du seuil lactique sur des blocs répétés. L’objectif est d’améliorer ta tolérance à l’effort soutenu et d’augmenter progressivement ta vitesse moyenne sur des distances intermédiaires. Les blocs doivent être réalisés avec constance, sans départ trop rapide. La récupération active entre chaque répétition permet de maintenir un volume qualitatif important tout en contrôlant la fatigue. Ce travail est particulièrement efficace pour préparer des compétitions sur 10 km ou semi-marathon et renforcer la stabilité de ton allure cible.",
+    "coachAdvice": "Sur les blocs au seuil, concentre-toi sur la régularité plutôt que sur la vitesse pure. Évite les variations d’allure trop importantes et surveille ton relâchement musculaire. Ta respiration doit être soutenue mais contrôlée. Si tu ressens une dérive cardiaque excessive, ajuste légèrement l’intensité afin de préserver la qualité globale de la séance. Les récupérations doivent rester actives, sans marcher. En fin de séance, prends le temps d’analyser ton niveau de fatigue afin d’adapter la prochaine sortie si nécessaire."
+,
+    "exerciseBlocks": [
+      {
+        "blockType": "warmUp",
+        "repeat": 1,
+        "exercises": [
+          {
+            "paceName": "Endurance fondamentale",
+            "zone": 2,
+            "duration": 900,
+            "pace": 380
+          }
+        ]
+      },
+      {
+        "blockType": "default",
+        "repeat": 3,
+        "exercises": [
+          {
+            "paceName": "Seuil",
+            "zone": 4,
+            "duration": 600,
+            "pace": 305
+          }
+        ]
+      },
+      {
+        "blockType": "recovery",
+        "repeat": 3,
+        "exercises": [
+          {
+            "paceName": "Récupération active",
+            "zone": 2,
+            "duration": 180,
+            "pace": 410
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "session_003",
+    "title": "Trail vallonné technique",
+    "sessionIndex": 3,
+    "duration": 6000,
+    "distance": 16.8,
+    "difficulty": 3,
+    "type": "trail",
+    "status": "skipped",
+    "description": "Cette séance en terrain vallonné a pour objectif de travailler l’adaptation à des variations de pente fréquentes tout en maintenant un effort global maîtrisé. Les montées doivent être gérées avec intelligence afin d’éviter une accumulation excessive de fatigue musculaire. Les descentes sont l’occasion de travailler la coordination et la stabilité. Le but n’est pas la vitesse maximale mais la gestion optimale de l’effort sur terrain irrégulier. Ce type de séance développe la puissance musculaire spécifique au trail et améliore la capacité à relancer après chaque difficulté.",
+    "coachAdvice": "Adapte ton allure en fonction du profil du terrain plutôt que de chercher à maintenir une vitesse constante. En montée, raccourcis la foulée et augmente la cadence. En descente, reste vigilant sur la pose du pied et garde le regard porté vers l’avant pour anticiper les obstacles. Hydrate-toi régulièrement et reste attentif aux sensations musculaires, notamment au niveau des quadriceps. Si les conditions sont glissantes, privilégie la sécurité à la performance."
+,
+    "exerciseBlocks": [
+      {
+        "blockType": "warmUp",
+        "repeat": 1,
+        "exercises": [
+          {
+            "paceName": "Endurance fondamentale",
+            "zone": 2,
+            "duration": 1200,
+            "pace": 390
+          }
+        ]
+      },
+      {
+        "blockType": "default",
+        "repeat": 1,
+        "exercises": [
+          {
+            "paceName": "Trail en terrain vallonné",
+            "zone": 3,
+            "duration": 4200,
+            "pace": 420
+          }
+        ]
+      },
+      {
+        "blockType": "recovery",
+        "repeat": 1,
+        "exercises": [
+          {
+            "paceName": "Retour au calme",
+            "zone": 1,
+            "duration": 600,
+            "pace": 450
+          }
+        ]
+      }
+    ]
+  }
+]
