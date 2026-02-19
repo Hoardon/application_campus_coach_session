@@ -10,6 +10,12 @@ class SessionsController extends GetxController {
 
   final state = Rx<UiState<List<Session>>>(const UiLoading());
 
+  @override
+  void onInit() {
+    super.onInit();
+    loadSessions();
+  }
+
   Future<void> loadSessions() async {
     state.value = const UiLoading();
     try {

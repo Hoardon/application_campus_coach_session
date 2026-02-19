@@ -10,6 +10,13 @@ class SessionDetailsController extends GetxController {
 
   final state = Rx<UiState<Session>>(const UiLoading());
 
+  @override
+  void onInit() {
+    super.onInit();
+    final selectedSessionId = Get.parameters['id'] as String;
+    loadSelectedSession(id: selectedSessionId);
+  }
+
   Future<void> loadSelectedSession({required String id}) async {
     state.value = const UiLoading();
     try {
