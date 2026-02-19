@@ -248,6 +248,7 @@ google-services.json
 
 # Avoid commiting Flutter generated source files
 *.freezed.dart
+*.g.dart
 **/gen/
 /.flutter-plugins-dependencies
 
