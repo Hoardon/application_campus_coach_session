@@ -25,7 +25,7 @@
         ]
       },
       {
-        "blockType": "default",
+        "blockType": "none",
         "repeat": 1,
         "exercises": [
           {
@@ -76,7 +76,7 @@
         ]
       },
       {
-        "blockType": "default",
+        "blockType": "none",
         "repeat": 3,
         "exercises": [
           {
@@ -127,7 +127,7 @@
         ]
       },
       {
-        "blockType": "default",
+        "blockType": "none",
         "repeat": 1,
         "exercises": [
           {
