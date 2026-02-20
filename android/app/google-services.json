@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "726647259071",
+    "project_id": "app-campus-coach-session",
+    "storage_bucket": "app-campus-coach-session.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726647259071:android:18f340aa56509f8742ab0a",
+        "android_client_info": {
+          "package_name": "com.hmcraft.application_campus_coach_session"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXIWomGhRJNW7fg9pZLlc5qWkhUo9aLgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
