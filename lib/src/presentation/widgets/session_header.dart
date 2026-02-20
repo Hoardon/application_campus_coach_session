@@ -1,6 +1,7 @@
 import 'package:application_campus_coach_session/src/core/utils/const_utils.dart';
 import 'package:application_campus_coach_session/src/domain/entities/session.dart';
 import 'package:application_campus_coach_session/src/presentation/widgets/header_session_stats.dart';
+import 'package:application_campus_coach_session/src/presentation/widgets/section_title.dart';
 import 'package:application_campus_coach_session/src/presentation/widgets/session_badge_type.dart';
 import 'package:flutter/material.dart';
 
@@ -24,10 +25,11 @@ class SessionHeader extends StatelessWidget {
           children: [
             Row(
               children: [
-                Expanded(child: _HeaderTitle(theme: theme)),
+                Expanded(child: SectionTitle(title: 'Séance 1 sur 3')),
                 const SessionBadgeType(label: 'COMPETITION'),
               ],
             ),
+            SizedBox(height: Spacing.xxs),
             Row(
               spacing: Spacing.m,
               children: [
@@ -50,16 +52,5 @@ class SessionHeader extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-class _HeaderTitle extends StatelessWidget {
-  const _HeaderTitle({required this.theme});
-
-  final ThemeData theme;
-
-  @override
-  Widget build(BuildContext context) {
-    return Text('Séance 1 sur 3', style: theme.textTheme.titleMedium);
   }
 }

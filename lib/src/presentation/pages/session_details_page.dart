@@ -94,6 +94,7 @@ class SessionDetailsPage extends GetView<SessionDetailsController> {
                           children: [
                             SessionHeader(session: session),
                             SessionBody(session: session),
+                            SessionHeader(session: session),
                             BottomActions(),
                           ],
                         ),

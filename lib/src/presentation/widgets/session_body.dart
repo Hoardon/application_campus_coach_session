@@ -1,5 +1,9 @@
+import 'package:application_campus_coach_session/src/core/utils/const_utils.dart';
 import 'package:application_campus_coach_session/src/domain/entities/session.dart';
-import 'package:application_campus_coach_session/src/presentation/widgets/bottom_actions.dart';
+import 'package:application_campus_coach_session/src/presentation/widgets/app_button.dart';
+import 'package:application_campus_coach_session/src/presentation/widgets/exercise_block_widget.dart';
+import 'package:application_campus_coach_session/src/presentation/widgets/section_title.dart';
+import 'package:application_campus_coach_session/src/presentation/widgets/session_badge_type.dart';
 import 'package:flutter/material.dart';
 
 class SessionBody extends StatelessWidget {
@@ -15,7 +19,25 @@ class SessionBody extends StatelessWidget {
       elevation: 1,
       color: theme.colorScheme.surface,
       borderRadius: const .all(.circular(20)),
-      child: BottomActions(),
+      child: Padding(
+        padding: const EdgeInsets.all(Spacing.m),
+        child: Column(
+          spacing: Spacing.m,
+          children: [
+            Row(
+              children: [
+                const Expanded(child: SectionTitle(title: "INSTRUCTION")),
+                SessionBadgeType(label: session.type.getLabel().toUpperCase()),
+              ],
+            ),
+            ...List.generate(session.exerciseBlocks.length, (index) {
+              final exerciseBlock = session.exerciseBlocks[index];
+              return ExerciseBlockWidget(exerciseBlock: exerciseBlock);
+            }),
+            AppButton.primary(label: "Démarrer l'activité", onPressed: () {}),
+          ],
+        ),
+      ),
     );
   }
 }

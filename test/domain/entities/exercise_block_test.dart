@@ -8,8 +8,8 @@ void main() {
       final exercise = Exercise(
         paceName: "Endurance",
         zone: 2,
-        duration: 600,
-        pace: 360,
+        duration: const Duration(minutes: 10),
+        pace: const Duration(minutes: 6),
       );
 
       final block = ExerciseBlock(
