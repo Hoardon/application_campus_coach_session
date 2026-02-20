@@ -45,7 +45,7 @@ It serves as a starting point for development, testing, and technical evaluation
 ## Technical Details
 
 * **Framework & Language:** Flutter & Dart
-* **State / Navigation:** [GetX](#https://pub.dev/packages/get) package
+* **State / Navigation:** ([GetX](https://pub.dev/packages/get)) package
 * **Code Generation:** `freezed`, `json_serializable`, `build_runner`
 * **Firebase:** `firebase_core`, `firebase_crashlytics`
 * **UI & Theming:** `flex_color_scheme`, Material Design widgets
