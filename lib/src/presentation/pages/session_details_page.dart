@@ -5,6 +5,7 @@ import 'package:application_campus_coach_session/src/presentation/widgets/action
 import 'package:application_campus_coach_session/src/presentation/widgets/app_header_title.dart';
 import 'package:application_campus_coach_session/src/presentation/widgets/background_image.dart';
 import 'package:application_campus_coach_session/src/presentation/widgets/bottom_actions.dart';
+import 'package:application_campus_coach_session/src/presentation/widgets/session_advice.dart';
 import 'package:application_campus_coach_session/src/presentation/widgets/session_body.dart';
 import 'package:application_campus_coach_session/src/presentation/widgets/session_header.dart';
 import 'package:flutter/material.dart';
@@ -94,7 +95,7 @@ class SessionDetailsPage extends GetView<SessionDetailsController> {
                           children: [
                             SessionHeader(session: session),
                             SessionBody(session: session),
-                            SessionHeader(session: session),
+                            SessionAdvice(session: session),
                             BottomActions(),
                           ],
                         ),
