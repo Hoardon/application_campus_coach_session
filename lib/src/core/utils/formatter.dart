@@ -12,7 +12,7 @@ extension DurationFormatter on Duration {
       return '${minutes}min$secondsStr';
     }
 
-    if (minutes == 0) {
+    if (minutes == 0 && hours == 0) {
       return '${seconds}sec';
     }
 
