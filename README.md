@@ -3,6 +3,8 @@
 **Campus Coach Session** is a Flutter mobile application designed to serve as a foundation for managing campus coaching sessions.
 This repository contains the full source code with proper architecture, asset organization, and code generation setup.
 
+## Demo video included in the repo
+
 ---
 
 ## Table of Contents
