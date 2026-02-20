@@ -1,9 +1,6 @@
 import 'package:application_campus_coach_session/src/core/utils/const_utils.dart';
 import 'package:application_campus_coach_session/src/domain/entities/session.dart';
 import 'package:application_campus_coach_session/src/presentation/widgets/coach_avatar.dart';
-import 'package:application_campus_coach_session/src/presentation/widgets/header_session_stats.dart';
-import 'package:application_campus_coach_session/src/presentation/widgets/section_title.dart';
-import 'package:application_campus_coach_session/src/presentation/widgets/session_badge_type.dart';
 import 'package:flutter/material.dart';
 
 class SessionAdvice extends StatelessWidget {

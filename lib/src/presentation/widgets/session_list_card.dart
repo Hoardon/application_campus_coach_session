@@ -5,10 +5,10 @@ import 'package:application_campus_coach_session/src/presentation/widgets/sectio
 import 'package:application_campus_coach_session/src/presentation/widgets/session_badge_type.dart';
 import 'package:flutter/material.dart';
 
-class SessionHeader extends StatelessWidget {
+class SessionListCard extends StatelessWidget {
   final Session session;
 
-  const SessionHeader({required this.session, super.key});
+  const SessionListCard({required this.session, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +28,8 @@ class SessionHeader extends StatelessWidget {
                 Expanded(
                   child: SectionTitle(title: 'Séance ${session.sessionIndex}'),
                 ),
+                SessionBadgeType(label: session.status.getLabel()),
+                SizedBox(width: Spacing.m),
                 const SessionBadgeType(label: 'COMPETITION'),
               ],
             ),
@@ -44,12 +46,6 @@ class SessionHeader extends StatelessWidget {
                 ),
               ],
             ),
-            Container(
-              height: 1,
-              width: double.infinity,
-              color: theme.dividerColor,
-            ),
-            Text(session.description),
           ],
         ),
       ),

@@ -49,7 +49,7 @@ class SessionDetailsPage extends GetView<SessionDetailsController> {
                       );
                     },
                     margin: EdgeInsets.only(right: 8),
-                    icon: Icon(Icons.more_horiz),
+                    icon: Icon(Icons.light_mode_rounded),
                   ),
                 ],
                 flexibleSpace: FlexibleSpaceBar(
