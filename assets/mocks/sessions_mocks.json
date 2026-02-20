@@ -26,12 +26,24 @@
       },
       {
         "blockType": "none",
-        "repeat": 1,
+        "repeat": 2,
         "exercises": [
           {
             "paceName": "Endurance fondamentale",
             "zone": 2,
-            "duration": 3000,
+            "duration": 1500,
+            "pace": 360
+          },
+          {
+            "paceName": "Endurance calme",
+            "zone": 5,
+            "duration": 1000,
+            "pace": 480
+          },
+          {
+            "paceName": "Endurance fondamentale",
+            "zone": 2,
+            "duration": 1500,
             "pace": 360
           }
         ]
@@ -72,6 +84,12 @@
             "zone": 2,
             "duration": 900,
             "pace": 380
+          },
+          {
+            "paceName": "Accélération",
+            "zone": 3,
+            "duration": 450,
+            "pace": 260
           }
         ]
       },
@@ -95,6 +113,12 @@
             "paceName": "Récupération active",
             "zone": 2,
             "duration": 180,
+            "pace": 410
+          },
+          {
+            "paceName": "Marche",
+            "zone": 1,
+            "duration": 360,
             "pace": 410
           }
         ]
