@@ -1,7 +1,6 @@
 import 'package:application_campus_coach_session/src/domain/entities/exercise.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-
 part 'exercise_model.freezed.dart';
 part 'exercise_model.g.dart';
 
@@ -14,8 +13,8 @@ abstract class ExerciseModel with _$ExerciseModel {
     required int pace,
   }) = _ExerciseModel;
 
-  factory ExerciseModel.fromJson(Map<String, dynamic> json)
-      => _$ExerciseModelFromJson(json);
+  factory ExerciseModel.fromJson(Map<String, dynamic> json) =>
+      _$ExerciseModelFromJson(json);
 }
 
 extension ExerciseModelMapper on ExerciseModel {
@@ -23,8 +22,8 @@ extension ExerciseModelMapper on ExerciseModel {
     return Exercise(
       paceName: paceName,
       zone: zone,
-      duration: duration,
-      pace: pace,
+      duration: Duration(seconds: duration),
+      pace: Duration(seconds: pace),
     );
   }
 }

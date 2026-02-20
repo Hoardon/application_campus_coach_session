@@ -11,7 +11,12 @@ void main() {
     setUp(() {
       exerciseBlock = ExerciseBlock(
         exercises: [
-          Exercise(paceName: "Endurance", zone: 2, duration: 600, pace: 360),
+          Exercise(
+            paceName: "Endurance",
+            zone: 2,
+            duration: const Duration(minutes: 10),
+            pace: const Duration(minutes: 6),
+          ),
         ],
         repeat: 2,
         blockType: BlockType.warmUp,

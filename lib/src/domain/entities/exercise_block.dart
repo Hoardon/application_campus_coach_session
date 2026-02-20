@@ -14,6 +14,16 @@ abstract class ExerciseBlock with _$ExerciseBlock {
 
 enum BlockType { recovery, warmUp, none }
 
+extension BlockTypeToStringExtension on BlockType {
+  String getLabel() {
+    return switch (this) {
+      BlockType.recovery => 'récupération',
+      BlockType.warmUp => 'échauffememt',
+      BlockType.none => '',
+    };
+  }
+}
+
 extension BlockTypeExtension on String {
   BlockType toBlockType() {
     return BlockType.values.firstWhere(

@@ -22,6 +22,15 @@ abstract class Session with _$Session {
 
 enum SessionType { road, trail }
 
+extension SessionTypeToStringExtension on SessionType {
+  String getLabel() {
+    return switch (this) {
+      SessionType.road => 'Route',
+      SessionType.trail => 'Trail',
+    };
+  }
+}
+
 extension SessionTypeExtension on String {
   SessionType toSessionType() {
     return SessionType.values.firstWhere(
@@ -32,6 +41,16 @@ extension SessionTypeExtension on String {
 }
 
 enum SessionStatus { todo, done, skipped }
+
+extension SessionStatusToStringExtension on SessionStatus {
+  String getLabel() {
+    return switch (this) {
+      SessionStatus.todo => 'A faire',
+      SessionStatus.done => 'Faite',
+      SessionStatus.skipped => 'Passé',
+    };
+  }
+}
 
 extension SessionStatusExtension on String {
   SessionStatus toSessionStatus() {
